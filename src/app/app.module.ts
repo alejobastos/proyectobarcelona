@@ -6,10 +6,12 @@ import { DirectivoModule } from './directivo/directivo.module';
 import { EntrenadorModule } from './entrenador/entrenador.module';
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
