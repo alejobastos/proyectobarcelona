@@ -9,6 +9,15 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { CurrentOptionComponent } from './current-option/current-option.component';
 
+import { RouterModule, Routes } from '@angular/router';
+import { IndexComponent } from './jugador/index/index.component';
+import { AddComponent as EntrenadorAddComponent } from './entrenador/add/add.component';
+
+const appRoutes: Routes = [
+{path: 'jugador/index', component: IndexComponent},
+{path: 'entrenador/add',component: EntrenadorAddComponent},
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +29,10 @@ import { CurrentOptionComponent } from './current-option/current-option.componen
     JugadorModule,
     AsistenteModule,
     DirectivoModule,
-    EntrenadorModule
+    EntrenadorModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
 
 
   ],
