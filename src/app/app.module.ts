@@ -7,11 +7,13 @@ import { EntrenadorModule } from './entrenador/entrenador.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
+import { CurrentOptionComponent } from './current-option/current-option.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    CurrentOptionComponent
   ],
   imports: [
     BrowserModule,
