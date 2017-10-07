@@ -1,3 +1,15 @@
-<p>
-  list works!
-</p>
+<table  border="1">
+    <tr>
+      <td>nombre</td>
+      <td>posicion</td>
+      <td>ciudad</td>
+      <td>numero</td>
+  </tr>
+  <tr *ngFor="let jugador of jugadorList"> 
+      <td>{{jugador.nombre}}</td>
+      <td>{{jugador.posicion}}</td>
+      <td>{{jugador.ciudad}}</td>
+      <td>{{jugador.numero}}</td>
+  </tr>
+  </table>
+  <br/>
