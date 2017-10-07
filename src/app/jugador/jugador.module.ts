@@ -4,6 +4,8 @@ import { AddComponent } from './add/add.component';
 import { ListComponent } from './list/list.component';
 import { IndexComponent } from './index/index.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { FormsModule } from '@angular/forms';
 import {
   MdAutocompleteModule,
@@ -75,7 +77,8 @@ import {
     MdTableModule,
     MdTabsModule,
     MdToolbarModule,
-    MdTooltipModule
+    MdTooltipModule,
+    BrowserAnimationsModule
   ],
   declarations: [AddComponent, ListComponent, IndexComponent]
 })
